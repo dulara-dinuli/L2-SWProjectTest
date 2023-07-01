@@ -1,0 +1,63 @@
+/* .newPageContent{
+    position: initial;
+    width: 80%;
+    padding: 5% 5% 5% 0%;
+    float: right;
+} */
+
+.teacherInfoName{
+    text-align: center;
+    background-color: #212529;
+    color: #fff;
+    text-decoration: wavy;
+    padding: 5px;
+}
+
+.teacherInfoTable{
+    border: none;
+    border-radius: 1%;
+    overflow: hidden;
+    width: 100%;
+    margin: 1% 6% 6% 0%;
+    background-image: linear-gradient(rgba(227, 115, 255, 0.045), rgba(253, 232, 255, 0.264), rgba(255, 247, 255, 0.347));
+    box-shadow: 0 2px 5px rgba(37, 26, 80, 0.584);
+    backdrop-filter: blur(10px);
+}
+
+td{
+    padding: 2% 0% 2% 2%;
+}
+
+.back{
+    position: absolute;
+    left: 5%;
+}
+
+.backIcon{
+    padding-left: 0%;
+    color: #b6ade1c5;
+}
+
+.card.tableheading{
+    background-color: #1c0e4ac1;
+    color: #fff;
+    width:max-content;
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin-top: 8%;
+    box-shadow: 0 4px 5px rgba(31, 19, 87, 0.584);
+}
+
+.card{
+    width: auto;
+    height: max-content;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.584);
+}
+
+.ag-theme-alpine {
+    /* position: relative; */
+    --ag-header-background-color: rgba(63, 40, 100, 0.584);
+    --ag-row-hover-color: rgba(77, 41, 97, 0.342);
+}

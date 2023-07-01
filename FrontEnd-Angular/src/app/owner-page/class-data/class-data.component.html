@@ -1,0 +1,65 @@
+<!-- Create the class more info page -->
+
+<div class = "container-fluid page-content">
+    <div class = "newPageContent">
+    <div class="card classInfoName">
+        <h3> <a class="back flex" (click) = "previousPage()"><i class="fa-solid fa-hand-point-left backIcon"></i>
+        </a> {{classInfo.subject}} - {{teacher.firstName}} {{teacher.lastName}}</h3>
+    </div>
+    <div>
+        <div class="card tableheading">
+            <th>Class Details</th>
+        </div>
+
+        <table class="classInfoTable">
+    
+            <tr>
+                <td><label> <b>Class Id</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.classId}}</td>
+                <td><label> <b>Subject</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.subject}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Grade</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.grade}}</td>
+                <td><label><b>Type</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.type}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Teacher ID</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.teacherId}}</td>
+                <td><label><b>Teacher Name</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacher.firstName}} {{teacher.lastName}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Start Time</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.startTime}}</td>
+                <td><label><b>Duration</b></label> </td>
+                <td><b>:&emsp;</b></td>
+                <td>{{classInfo.duration}} Hours</td>
+            </tr>
+            <tr>
+                <td><label><b>Day of Week</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.dayOfWeek}}</td>
+                <td><label><b>Monthly Fee</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> Rs. {{classInfo.monthlyFee}} /=</td>
+            </tr>
+            <tr>
+                <td><label><b>Teachers' Share</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{classInfo.teacherShare}} %</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+

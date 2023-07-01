@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+ }
+ 
+ /* .newPageContent{
+    position: initial;
+    width: 80%;
+    padding: 5% 5% 5% 0%;
+    float: right;
+} */
+
+h4{
+    width: max-content;
+}
+
+/* Default Search bar styles */
+.searchBar,.form-control{
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    width: 20%;
+    background-color: rgb(224, 224, 224);
+    color: #202020;
+    font-family:Arial, FontAwesome;
+
+}
+
+/* Page Count Formatter Styles */
+.pageCount{
+    margin-top: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#pageSize{
+    font-style: italic;
+    width: max-content;
+    border-color: #00093d;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-left: 8px;
+}
+
+.ag-theme-alpine {
+    /* position: relative; */
+    --ag-header-background-color: rgba(44, 87, 136, 0.562);
+    --ag-row-hover-color: rgba(42, 89, 121, 0.349);
+}

@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+ }
+
+ /* .newPageContent{
+    position: initial;
+    width: 80%;
+    padding: 5% 5% 5% 0%;
+    float: right;
+}
+  */
+
+h5,h6{
+    width: max-content;
+}
+
+.back{
+    position: absolute;
+    left:22%;
+    top:3%;
+}
+
+.backIcon{
+    padding-left: 0%;
+    color:rgba(18, 0, 60, 0.826);
+    font-size: 28px;
+}
+
+.ag-theme-alpine {
+    /* position: relative; */
+    --ag-header-background-color: rgba(3, 18, 103, 0.581);
+    --ag-row-hover-color: rgba(31, 1, 86, 0.349);
+}
+
+.ag-header-group-cell-label {
+    justify-content: center !important;
+}
+
+.customFilter{
+    position: relative;
+    padding: 4% 0% 0% 70%;
+}
+
+#filterClassBoxSize, #filterYearBoxSize{
+    font-style: italic;
+    width: 4rem;
+    border-color: #00093d;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 10%;
+}
+
+

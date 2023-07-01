@@ -1,0 +1,73 @@
+<!-- Create the class more info page -->
+
+<div class = "container-fluid page-content">
+    <div class = "newPageContent">
+    <div class="card teacherInfoName">
+        <h3> <a class="back flex" (click) = "previousPage()"><i class="fa-solid fa-hand-point-left backIcon"></i>
+        </a> {{teacherInfo.firstName}} {{teacherInfo.lastName}}</h3>
+    </div>
+    <div>
+        <div class="card tableheading">
+            <th>Teacher Details</th>
+        </div>
+ 
+        <table class="teacherInfoTable">
+    
+            <tr>
+                <td><label> <b>Teacher Id</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacherInfo.teacherId}}</td>
+                <td><label> <b>NIC</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacherInfo.nic}}</td>
+            </tr>
+            <tr>
+                <td><label><b>First Name</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacherInfo.firstName}}</td>
+                <td><label><b>Last Name</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacherInfo.lastName}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Contact Number</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacherInfo.telNo}}</td>
+                <td><label><b>E-mail</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacherInfo.email}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Address</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{teacherInfo.address}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <div class="card tableheading">
+            <th>Class Details</th>
+        </div>
+    </div>
+
+     <!-- Create AG Grid Table -->
+     <ag-grid-angular
+     style="width: 100; height: 100%"
+     class="ag-theme-alpine"
+     [rowData]="rowData"
+     [rowHeight]="rowHeight"
+     [columnDefs]="columnDefs"
+     [defaultColDef]="defaultColDef"
+     domLayout='autoHeight'
+     (gridReady)="onGridReady($event)"
+     [cacheQuickFilter]="true"
+     >
+     </ag-grid-angular>
+
+</div>
+</div>
+

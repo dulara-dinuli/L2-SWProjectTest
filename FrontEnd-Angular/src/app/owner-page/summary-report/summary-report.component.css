@@ -1,0 +1,77 @@
+p{
+    text-align: center;
+}
+
+.tot{
+    text-align: left;
+}
+
+.totDiv{
+    background-color: rgba(227, 227, 227, 0.805);
+    width:fit-content;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: rgba(255, 255, 255, 0.673);
+    border: 1px solid gray;
+    border-style: dashed;
+}
+
+.card-text{
+    font-size: 30px;
+    padding: 1px 1px 1px 1px;
+}
+
+.card{
+    --bs-card-spacer-y: 0rem;
+    --bs-card-spacer-x: 0rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.584);
+}
+
+.card1{
+    background-color: rgba(22, 201, 210, 0.567);
+}
+
+.card2{
+    background-color: rgba(210, 207, 22, 0.567);
+}
+
+.card3{
+    background-color: rgba(41, 210, 22, 0.567);
+}
+
+.card4{
+    background-color: rgba(210, 107, 22, 0.567);
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.chartBar{
+    display: flex;
+    justify-content: space-between;
+  }
+
+i{
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.card-container{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.673);
+    border: 1px solid gray;
+    border-style: dashed;
+}
+
+.chart-container{
+    padding: 5px 5px 25px 5px;
+    background-color: rgba(255, 255, 255, 0.673);
+    border: 1px solid gray;
+    border-style: dashed;
+}

@@ -1,0 +1,83 @@
+<!-- Create the student more information page -->
+
+<div class = "container-fluid page-content">
+    <div class = "newPageContent">
+    <div class="card studentInfoName">
+        <h3> <a class="back flex" routerLink='/student-information'><i class="fa-solid fa-hand-point-left backIcon"></i></a> {{student.firstName}} {{student.lastName}}</h3>
+    </div>
+    <div>
+        <div class="card tableheading">
+            <th>Student Details</th>
+        </div>
+
+        <table class="studentInfoTable">
+            <tr>
+                <td><label> <b>Student Id</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{student.studentId}}</td>
+                <td><label> <b>Title</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{student.title}}</td>
+            </tr>
+            <tr>
+                <td><label><b>First Name</b></label></td>
+                <td><b>:</b></td>
+                <td> {{student.firstName}}</td>
+                <td><label><b>Last Name</b></label></td>
+                <td><b>:</b></td>
+                <td> {{student.lastName}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Date of Birth</b></label></td>
+                <td><b>:</b></td>
+                <td> {{student.dob}}</td>
+                <td><label><b>Contact No</b></label> </td>
+                <td><b>:</b></td>
+                <td>{{student.contactNo}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Address</b></label></td>
+                <td><b>:</b></td>
+                <td> {{student.address}}</td>
+                <td><label><b>Email</b></label></td>
+                <td><b>:</b></td>
+                <td> {{student.email}}</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div class="card tableheading">
+            <th>Parent Details</th>
+        </div>
+        
+        <table class="parentInfoTable">
+
+            <tr>
+                <td><label><b>NIC</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{parent.parentNic}}</td>
+                <td><label><b>Title</b></label></td>
+                <td><b>:&emsp;</b></td>
+                <td> {{parent.title}}</td>
+            </tr>
+            <tr>
+                <td><label><b>First Name</b></label></td>
+                <td><b>:</b></td>
+                <td> {{parent.firstName}}</td>
+                <td><label><b>Last Name</b></label></td>
+                <td><b>:</b></td>
+                <td> {{parent.lastName}}</td>
+            </tr>
+            <tr>
+                <td><label><b>Address</b></label></td>
+                <td><b>:</b></td>
+                <td> {{parent.address}}</td>
+                <td><label><b>Contact No</b></label></td>
+                <td><b>:</b></td>
+                <td> {{parent.contactNo}}</td>
+            </tr>
+        </table>
+    </div> 
+
+    </div>
+</div>

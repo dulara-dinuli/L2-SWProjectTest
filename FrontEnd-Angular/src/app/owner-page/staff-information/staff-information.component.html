@@ -1,0 +1,53 @@
+<div class="container-fluid page-content">
+    <div class = "newPageContent">
+    <div>
+      <h4>Manage Staff</h4>
+
+      <div class="showStaffData">
+        Staff Type:
+        <select (change)="showStaffData()" id="showStaffData">
+          <option value="teacher" selected="true">Teacher</option>
+          <option value="receptionist">Receptionist</option> 
+        </select>
+      </div>
+  
+      <!-- Default Search bar -->
+      <form role="search" >
+          <input class="form-control searchBar" type="search" id="searchFeature" placeholder="&#xf002;   Search" (input)="onFilterTextBoxChanged()">
+      </form>
+  
+    </div>
+  
+    <!-- Create AG Grid Table -->
+    <ag-grid-angular
+      style="width: 100%; height: 100%"
+      class="ag-theme-alpine"
+      [rowData]="rowData"
+      [rowHeight]="rowHeight"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [pagination]="true"
+      [paginationPageSize]="paginationPageSize"
+      [paginationNumberFormatter]="paginationNumberFormatter"
+      [suppressMenuHide]="true"
+      domLayout='autoHeight'
+      (gridReady)="onGridReady($event)"
+      [cacheQuickFilter]="true"
+      [excludeHiddenColumnsFromQuickFilter] = "true"
+     ></ag-grid-angular>
+  
+      <div class="pageCount">
+        Page Size:
+        <select (change)="onPageSizeChanged()" id="pageSize">
+          <option value="5" selected="true">Default</option>
+          <option value="2">2</option>
+          <option value="8">8</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+
+      <div class="addBtn">
+        <button type="button" class="btn btn-secondary addstaffbtn">Add</button>
+      </div>
+  </div>
+  </div>
