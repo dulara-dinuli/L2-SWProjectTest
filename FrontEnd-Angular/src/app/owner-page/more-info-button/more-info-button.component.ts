@@ -15,7 +15,7 @@ import { EnrollmentInfoComponent } from '../enrollment-info/enrollment-info.comp
       [ngbPopover]="popContent" container="body">
       <i class="fa-sharp fa-solid fa-info"></i></button>
     <ng-template #popContent>
-    <ul class="dropdown-menu" *ngIf="data.studentId && !data.enrollmentId" >
+    <ul class="dropdown-menu" *ngIf="data.studentId && !data.enrollmentId && !data.classId" >
       <li><a class="dropdown-item" [routerLink]="['/enrollment-info', data.studentId]">Enrollment</a></li>
       <li><a class="dropdown-item" [routerLink]="['/attendance-info', data.studentId]">Attendence</a></li>
       <!-- <li><a class="dropdown-item" [routerLink]="['/class-payment-info', data.studentId]">Payment</a></li> -->
@@ -26,22 +26,22 @@ import { EnrollmentInfoComponent } from '../enrollment-info/enrollment-info.comp
       <li class="dropdown-item"><button><i class="fa-solid fa-trash dropTwoIcon"></i>Remove</button></li>
     </ul>
 
-    <ul class="dropdown-menu" *ngIf= "data.enrollmentId">
+    <ul class="dropdown-menu" *ngIf="data.enrollmentId ">
     <li class="dropdown-item"><button  (click)="classData(data.classId, data.teacherId)">Class Info</button></li>
     <li class="dropdown-item"><button  (click)="teacherData(data.teacherId)">Teacher Info</button></li>
     </ul>
 
-    <ul class="dropdown-menu" *ngIf= "data.classId && !data.enrollmentId">
+    <ul class="dropdown-menu" *ngIf="data.classId && !data.enrollmentId">
     <li class="dropdown-item"><button  (click)="classData(data.classId, data.teacherId)">Class Info</button></li>
     </ul>
 
-    <ul class="dropdown-menu" *ngIf="data.receptionId" >
+    <ul class="dropdown-menu" *ngIf="data.receptionId && !data.studentId && !data.classId" >
       <li class="dropdown-item"><button  (click)="receptionData(data.receptionId)"><i class="fa-sharp fa-solid fa-eye dropTwoIcon"></i>View</button></li>
       <li class="dropdown-item"><button><i class="fa-solid fa-pen dropTwoIcon"></i>Update</button></li>
       <li class="dropdown-item"><button><i class="fa-solid fa-trash dropTwoIcon"></i>Remove</button></li>
     </ul>
 
-    <ul class="dropdown-menu" *ngIf="data.teacherId" >
+    <ul class="dropdown-menu" *ngIf="data.teacherId && !data.studentId && !data.classId" >
       <li class="dropdown-item"><button  (click)="teacherData(data.teacherId)"><i class="fa-sharp fa-solid fa-eye dropTwoIcon"></i>View</button></li>
       <li class="dropdown-item"><button><i class="fa-solid fa-pen dropTwoIcon"></i>Update</button></li>
       <li class="dropdown-item"><button><i class="fa-solid fa-trash dropTwoIcon"></i>Remove</button></li>
