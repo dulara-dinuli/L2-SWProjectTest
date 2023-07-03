@@ -13,9 +13,19 @@ It works as a collaborative online platform for all parties in the organization 
 <h3>Used Libraries</h3>
          <ul>
                 <li>Bootstrap - For Styling/ Responsiveness</li>
+                <li>Font Awesome - As an Icon Toolkit</li>
                 <li>AG-Grid Angular - To Create Tables</li>
                 <li>ChartJS - To Create Graphs</li>
          </ul>
+         
+  <h3>Used IDEs & Applications:</h3>
+  <ul>
+    <li>Visual Studio Code - For Frontend</li>
+    <li>IntelliJ IDEA - For Backend</li>
+    <li>MySQL Workbench - As a Database Management System</li>
+    <li>Postman - To Test the APIs</li>
+  </ul>
+
 
 ---
 
