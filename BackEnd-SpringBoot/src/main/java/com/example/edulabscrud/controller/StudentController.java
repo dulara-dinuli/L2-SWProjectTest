@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@CrossOrigin(origins = {"*"})
 @RestController
 @RequestMapping("/api/v1/")
 public class StudentController {
@@ -19,7 +20,6 @@ public class StudentController {
     private StudentRepository studentRepository;
 
     //get all students
-    @CrossOrigin(origins = {"http://localhost:4200","http://localhost:52061"})
     @GetMapping("/student")
 
     public List<Student> getAllStudents(){
@@ -27,7 +27,6 @@ public class StudentController {
     }
 
     // get student by id rest api
-    @CrossOrigin(origins = {"http://localhost:4200","http://localhost:52061"})
     @GetMapping("/student/{studentId}")
     public ResponseEntity<Student> getStudentById(@PathVariable Long studentId){
         Student student = studentRepository.findById(studentId)
