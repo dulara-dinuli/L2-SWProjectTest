@@ -5,7 +5,7 @@ It works as a collaborative online platform for all parties in the organization 
 
 <h3>Used Technologies</h3>
          <ul>
-                <li>FrontEnd - Angular</li>
+                <li>FrontEnd - Angular (15.1.0)</li>
                 <li>BackEnd - SpringBoot</li>
                 <li>Database - MySQL</li>
          </ul>
